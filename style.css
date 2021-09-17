@@ -1,0 +1,107 @@
+body {
+    /* Text color */
+    color:black;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 60px;
+}
+
+
+h2 {
+    color: rgb(148, 9, 63);
+    margin-bottom: 80px;
+}
+
+img {
+    /* Make sure the img size is the same or larger that the box's
+    */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.card {
+    color: rgb(5, 94, 71);
+    width: 350px;
+    text-align: center;
+    background-color: rgb(250, 215, 224);
+    border: 5px solid rgb(5, 94, 71);
+    /* Make a card a little rounded */
+    border-radius: 20px;
+    /* Space between this card and the other elements */
+    margin: 15px;
+    /* Space between the border of this card and its inner content */
+    padding: 30px;
+    /* Make this element transparent by 20% */
+    opacity: 0.8; 
+    cursor: pointer;
+    transition: transform 0.2s ;
+   
+}
+
+.card:hover {
+    background-color: white;
+    /* Zoom by 10% */
+    transform: scale(1.1);
+    
+    /* 0px - horizontal offset */
+    /* 0px - vertical offset */
+    /* 30px - radius */
+    /* purple - color */
+    box-shadow: 0px 0px 30px rgb(5, 94, 71);
+    transform: scale(1.1) rotate(-10deg);
+
+}
+
+.yellow-circle {
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+    background-color: rgb(255, 255, 0);
+}
+
+
+.background-ellipse {
+    width: 1000px;
+    height: 1000px;
+            
+    border-radius: 50%;
+    background-color: rgb(202, 226, 247);
+    z-index: -1;
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+}
+
+#main-title {
+    color: rgb(148, 9, 63);
+}
+
+.cards-container {
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.image-container {
+    /* Specify the size for the box */
+    /* width = the card's width */
+    width: 100%;
+    /* Some height in px, smaller that the card's height */
+    height: 300px;
+    /* Crop the image if it's larger that the box */
+    overflow: hidden;
+    
+    /* Move the image to the center of the box */
+    /* Remember these 3 lines. You will use them a lot with
+    
+    Flexbox! */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
